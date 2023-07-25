@@ -12,6 +12,8 @@
 		EB9F3AF92A702BB400560871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F3AF72A702BB400560871 /* Main.storyboard */; };
 		EB9F3AFB2A702BB600560871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9F3AFA2A702BB600560871 /* Assets.xcassets */; };
 		EB9F3AFE2A702BB600560871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F3AFC2A702BB600560871 /* LaunchScreen.storyboard */; };
+		EB9F3B082A7045EA00560871 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = EB9F3B072A7045EA00560871 /* HorizonCalendar */; };
+		EB9F3B0A2A70495300560871 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F3B092A70495300560871 /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		EB9F3AFA2A702BB600560871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB9F3AFD2A702BB600560871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB9F3AFF2A702BB600560871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9F3B092A70495300560871 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9F3B082A7045EA00560871 /* HorizonCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 				EB9F3B052A702BED00560871 /* Resources */,
 				EB9F3AF72A702BB400560871 /* Main.storyboard */,
 				EB9F3AFC2A702BB600560871 /* LaunchScreen.storyboard */,
+				EB9F3B092A70495300560871 /* CalendarViewController.swift */,
 			);
 			path = CustomCal;
 			sourceTree = "<group>";
@@ -88,6 +93,9 @@
 			dependencies = (
 			);
 			name = CustomCal;
+			packageProductDependencies = (
+				EB9F3B072A7045EA00560871 /* HorizonCalendar */,
+			);
 			productName = CustomCal;
 			productReference = EB9F3AEE2A702BB400560871 /* CustomCal.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +124,9 @@
 				Base,
 			);
 			mainGroup = EB9F3AE52A702BB400560871;
+			packageReferences = (
+				EB9F3B062A7045EA00560871 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+			);
 			productRefGroup = EB9F3AEF2A702BB400560871 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9F3B0A2A70495300560871 /* CalendarViewController.swift in Sources */,
 				EB9F3AF22A702BB400560871 /* AppDelegate.swift in Sources */,
 				EB9F3AF42A702BB400560871 /* SceneDelegate.swift in Sources */,
 			);
@@ -362,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB9F3B062A7045EA00560871 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB9F3B072A7045EA00560871 /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB9F3B062A7045EA00560871 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB9F3AE62A702BB400560871 /* Project object */;
 }
